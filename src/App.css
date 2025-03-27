@@ -1,0 +1,186 @@
+/* src/App.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size:5.5rem;
+  color: #fd0076; /* Red color */
+  margin-top: 20px;
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SearchBar */
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.SearchBar input {
+  padding: 10px;
+  font-size: 1rem;
+  
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.SearchBar button {
+  background-color: #fd0076;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.SearchBar button:hover {
+  background-color: #11ff00;
+}
+
+/* App Playlist Layout */
+.App-playlist {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Track List */
+.TrackList {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Track {
+  background-color: #ffffff;
+  padding: 10px ;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Track-information h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+  padding-right: 10px;
+}
+
+.Track-information p {
+  font-size: 0.875rem;
+  color: #555;
+  padding-right: 15px;
+}
+
+.Track button {
+  background-color: #ffffff;
+  color: #0d00ff;
+  padding: 5px 15px;
+  border: solid 2px #0d00ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Track button:disabled {
+  background-color: #ffffff;
+  color: #11ff00;
+  border: solid 2px #11ff00;
+  
+}
+
+.Track button:hover {
+  background-color: #ffffff;
+  color: #d7d7d7;
+  border: solid 2px #d7d7d7;
+}
+
+/* Playlist */
+.Playlist {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border: solid 1px #ddd;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Playlist input {
+  width: auto;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #fd0076;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  
+  
+}
+
+.Playlist .TrackList {
+  margin-bottom: 20px;
+}
+
+.Playlist-save {
+  background-color: #fd0076;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.Playlist-save:hover {
+  background-color: #11ff00;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .App-playlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TrackList,
+  .Playlist {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Add this to your existing App.css */
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 60, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 9999;
+}
+
+
+
