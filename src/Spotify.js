@@ -3,7 +3,7 @@
 
 const clientId = '58f293c068094789ab9cb0d4bf903d35';
 const redirectUri = 'http://localhost:3000/';
-const apiUrl = 'https://api.spotify.com/v1/me';
+//const apiUrl = 'https://api.spotify.com/v1/me'; //supposed to take this out so it works when uploading to netify
 
 const Spotify = {
   getAccessToken() {
